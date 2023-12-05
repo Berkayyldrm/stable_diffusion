@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resim Oluşturma</title>
+</head>
+<body>
+    <h1>Resim Oluşturma</h1>
+    <form action="http://localhost:8000/ml/create_image" method="post" enctype="multipart/form-data">
+        <label for="prompt">Prompt:</label><br>
+        <input type="text" id="prompt" name="prompt"><br>
+        <label for="color_image_hex">Renk Kodu (Hex):</label><br>
+        <input type="text" id="color_image_hex" name="color_image_hex"><br>
+        <label for="ad_image">Resim Dosyası:</label><br>
+        <input type="file" id="ad_image" name="ad_image" accept="image/*"><br><br>
+        <input type="submit" value="Resim Oluştur">
+    </form>
+
+    <h1>Reklam Oluşturma</h1>
+    <form action="http://localhost:8000/ml/create_advert" method="post" enctype="multipart/form-data">
+        <label for="prompt">Prompt:</label><br>
+        <input type="text" id="prompt" name="prompt"><br>
+        <label for="color_image_hex">Renk Kodu (Hex):</label><br>
+        <input type="text" id="color_image_hex" name="color_image_hex"><br>
+        <label for="ad_image">Resim Dosyası:</label><br>
+        <input type="file" id="ad_image" name="ad_image" accept="image/*"><br><br>
+        <label for="logo">Logo Dosyası:</label><br>
+        <input type="file" id="logo" name="logo" accept="image/*"><br><br>
+        <label for="color_text_hex">Renk Kodu (Hex):</label><br>
+        <input type="text" id="color_text_hex" name="color_text_hex"><br>
+        <label for="punchline_text">Punchline Text:</label><br>
+        <input type="text" id="punchline_text" name="punchline_text"><br>
+        <label for="button_text">Button Text:</label><br>
+        <input type="text" id="button_text" name="button_text"><br>
+        <input type="submit" value="Reklam Oluştur">
+    </form>
+</body>
+</html>
